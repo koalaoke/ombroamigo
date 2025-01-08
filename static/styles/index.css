@@ -1,9 +1,5 @@
 .hero-page{
     height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .hero-title{
@@ -30,10 +26,4 @@ h1{
 .about-us > p{
     font-size: 1.2rem;
     line-height: 2rem;
-}
-
-@media (max-width: 768px) {
-    .hero-title{
-        font-size: 5rem;
-    }
 }

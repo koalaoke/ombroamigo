@@ -1,4 +1,10 @@
 {{ define "main" }}
+<div class="container">
     <h1>{{ .Title }}</h1>
+    <p>{{ .Date }} </p>
+    {{ if isset .Params "image-url" }}
+        <img class="img-fluid" src={{ .Param "image-url" }} alt="sla">
+    {{ end }}
     <div class="content">{{ .Content }}</div>
+</div>
 {{ end }}
