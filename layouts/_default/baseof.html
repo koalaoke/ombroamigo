@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    {{ partialCached "_css" . }}
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/starter.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    {{ block "extrahead" . }}
+    {{ end }}
 </head>
 <body>
     {{ partial "navbar" . }}
@@ -15,5 +17,6 @@
         {{ end }}
     </main>
     {{ partialCached "footer" . }}
+    {{ partialCached "_js" . }}
 </body>
 </html>

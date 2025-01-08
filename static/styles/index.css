@@ -1,0 +1,39 @@
+.hero-page{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-title{
+    font-weight: 900;
+    font-size: 8rem;
+    display: inline-block;
+    width: auto;
+    white-space: pre
+}
+
+.about-us{
+    padding: 7% 15%;
+}
+
+.title-image{
+    height: 4em;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about-us > p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero-title{
+        font-size: 5rem;
+    }
+}

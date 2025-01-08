@@ -1,6 +1,72 @@
+{{ define "extrahead" }}
+    <link rel="stylesheet" href="/styles/index.css">
+{{ end }}
+
 {{ define "main" }}
-    <h1>Página principal</h1>
-    {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ end }}
+    <div class="hero-page container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 my-5">
+                <h1 class="display-1 d-inline fw-bold text-md-center">CONTRA O SILÊNCIO</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <a href="/" class="btn btn-lg btn-primary w-100">Quero denunciar!</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-purple-300 py-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <img class="title-image" src="/images/people_hugging_color.svg" alt="Emoji de um abraço">
+                    <h1>Sobre nós</h1>
+                    <p>Nosso portal foi criado com o propósito de ser um espaço seguro e acolhedor para quem busca informações, apoio e recursos relacionados ao enfrentamento do assédio e outros tipos de violência. Acreditamos que a conscientização é o primeiro passo para a mudança, e por isso oferecemos conteúdos educativos, canais de denúncia e suporte para vítimas e suas famílias. Juntos, podemos construir uma sociedade mais justa e livre de violência.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-green-100">
+        <div class="container">
+            <div class="row py-5 gy-5 justify-content-center">
+                <div class="col-lg">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="title-image" src="/images/people_hugging_color.svg" alt="Emoji de um abraço">
+                            <h1 class="card-title">Aprenda sobre</h1>
+                            <p  class="card-text">Nosso portal foi criado com o propósito de ser um espaço seguro e acolhedor para quem busca informações, apoio e recursos relacionados ao enfrentamento do assédio e outros tipos de violência. Acreditamos que a conscientização é o primeiro passo para a mudança, e por isso oferecemos conteúdos educativos, canais de denúncia e suporte para vítimas e suas famílias. Juntos, podemos construir uma sociedade mais justa e livre de violência.</p>
+                            <a href="/posts" class="btn btn-primary w-100">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="title-image" src="/images/people_hugging_color.svg" alt="Emoji de um abraço">
+                            <h1 class="card-title">Recursos</h1>
+                            <p  class="card-text">Nosso portal foi criado com o propósito de ser um espaço seguro e acolhedor para quem busca informações, apoio e recursos relacionados ao enfrentamento do assédio e outros tipos de violência. Acreditamos que a conscientização é o primeiro passo para a mudança, e por isso oferecemos conteúdos educativos, canais de denúncia e suporte para vítimas e suas famílias. Juntos, podemos construir uma sociedade mais justa e livre de violência.</p>
+                            <a class="btn btn-primary w-100">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="title-image" src="/images/people_hugging_color.svg" alt="Emoji de um abraço">
+                            <h1 class="card-title">Quero ajuda</h1>
+                            <p  class="card-text">Nosso portal foi criado com o propósito de ser um espaço seguro e acolhedor para quem busca informações, apoio e recursos relacionados ao enfrentamento do assédio e outros tipos de violência. Acreditamos que a conscientização é o primeiro passo para a mudança, e por isso oferecemos conteúdos educativos, canais de denúncia e suporte para vítimas e suas famílias. Juntos, podemos construir uma sociedade mais justa e livre de violência.</p>
+                            <a class="btn btn-primary w-100">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-green-100 text-center">
+        <div class="container">
+            <div class="row justify-content-center py-5 fst-italic">
+                <div class="col-sm-8 display-6">"Nosso objetivo é fortalecer a cultura antiassédio no IFCE Campus Itapipoca, incentivando a denúncia e promovendo um ambiente seguro e respeitoso para todos."</div>
+            </div>
+        </div>
+    </div>
 {{ end }}
